@@ -673,12 +673,14 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint
 vendor/lib64/com.fingerprints.extension@1.0.so|7a356aecd3e458db31fb7ebe4605f55bdee50863
-vendor/lib64/hw/fingerprint.fpc.default.so|6f9433bf6cd0aaefa4275a7c2c124c8468d49868
 vendor/lib64/hw/fingerprint.goodix.default.so|dc62dd4cc72d3e930f6a709ff2771e1fe32f0cfc
 vendor/lib64/libgf_ca.so|ac46a106c5e3e2f4064bfded65c1002c1e6dc75a
 vendor/lib64/libgf_hal.so|289c029fe4ba30c075a7d22133880535bd555e94
 vendor/lib64/libgoodixhwfingerprint.so|6f7d1e37375e9cbdceb8b172a51daba36aa256d8
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|b2fb17535f499a1be7b2bfc28dc4f7f743beed5e
+
+# Fingerprint - from Kuba Wojciechowski <nullbytepl@gmail.com>
+vendor/lib64/hw/fingerprint.fpc.default.so
 
 # FM - from LA.UM.9.1.r1-09600-SMxxx0.0
 vendor/lib64/ftm_fm_lib.so
