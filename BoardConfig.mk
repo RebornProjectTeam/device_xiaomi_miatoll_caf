@@ -82,11 +82,9 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_miatoll
 
 # Kernel
 BOARD_KERNEL_CMDLINE += \
-    androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
     androidboot.usbcontroller=a600000.dwc3 \
     cgroup.memory=nokmem,nosocket \
-    console=ttyMSM0,115200n8 \
     earlycon=msm_geni_serial,0xa88000 \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
