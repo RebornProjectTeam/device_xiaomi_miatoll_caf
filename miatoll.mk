@@ -114,10 +114,6 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
     init.target.rc
 
-# Keyhandler
-PRODUCT_PACKAGES += \
-    KeyHandler
-
 # NFC
 TARGET_NFC_SKU := joyeuse
 
