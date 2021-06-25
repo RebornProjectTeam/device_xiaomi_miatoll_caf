@@ -84,7 +84,6 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_miatoll
 BOARD_KERNEL_CMDLINE += \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
-    androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     cgroup.memory=nokmem,nosocket \
     console=ttyMSM0,115200n8 \
@@ -100,7 +99,10 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 
-TARGET_KERNEL_CONFIG := vendor/miatoll-perf_defconfig
+TARGET_KERNEL_CONFIG := cust_defconfig
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
