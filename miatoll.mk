@@ -23,6 +23,9 @@ PRODUCT_PACKAGES += \
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+PRODUCT_PACKAGES += \
+    ModuleMetadataGoogle
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -132,7 +135,8 @@ PRODUCT_PACKAGES += \
     AOSPAMiatollFrameworks \
     AOSPAMiatollSettings \
     MiatollFrameworks \
-    MiatollSystemUI
+    MiatollSystemUI \
+    ModuleMetadataGoogleOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
