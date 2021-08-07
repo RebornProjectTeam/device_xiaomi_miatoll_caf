@@ -85,6 +85,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Gapps
+TARGET_DISABLES_GMS := true
+
 # GPS
 LOC_HIDL_VERSION = 4.0
 
