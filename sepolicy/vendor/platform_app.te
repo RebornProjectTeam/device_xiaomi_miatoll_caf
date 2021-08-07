@@ -1,0 +1,2 @@
+allow platform_app system_data_file:dir { read search getattr open };
+allow platform_app system_data_file:file { open read getattr };
