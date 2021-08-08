@@ -4,3 +4,10 @@ allow platform_app system_data_file:file { open read getattr };
 # Write to /data/hub_package for OTA packages.
 allow platform_app ota_package_file:dir create_dir_perms;
 allow platform_app ota_package_file:file create_file_perms;
+
+# Write to /cache.
+allow platform_app { cache_file cache_recovery_file  }:dir create_dir_perms;
+allow platform_app { cache_file cache_recovery_file  }:file create_file_perms;
+
+# Allow to find recovery_service to perform system upgrade
+allow platform_app recovery_service:service_manager find;
