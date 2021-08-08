@@ -220,6 +220,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/thermal/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
+
 # Vendor
 $(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 
