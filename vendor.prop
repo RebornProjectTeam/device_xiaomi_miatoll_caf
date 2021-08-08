@@ -20,6 +20,10 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
+# Diag
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
+
 # Display
 debug.sf.disable_backpressure=1
 ro.vendor.display.sensortype=2

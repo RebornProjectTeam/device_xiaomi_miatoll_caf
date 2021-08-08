@@ -1,2 +1,6 @@
 allow platform_app system_data_file:dir { read search getattr open };
 allow platform_app system_data_file:file { open read getattr };
+
+# Write to /data/hub_package for OTA packages.
+allow platform_app ota_package_file:dir create_dir_perms;
+allow platform_app ota_package_file:file create_file_perms;

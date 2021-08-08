@@ -2,3 +2,7 @@ allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
 
 allow system_app vendor_diag_device:chr_file r_file_perms;
+
+# Write to /data/hub_package for OTA packages.
+allow system_app ota_package_file:dir create_dir_perms;
+allow system_app ota_package_file:file create_file_perms;

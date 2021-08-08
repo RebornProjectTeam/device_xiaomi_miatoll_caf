@@ -4,3 +4,6 @@ allow vendor_wcnss_service init:unix_stream_socket { connectto };
 allow vendor_wcnss_service mnt_vendor_file:file { read open getattr };
 allow vendor_wcnss_service mnt_vendor_file:file { read };
 allow vendor_wcnss_service sysfs:file { read open };
+
+allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir create_dir_perms;
+allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:file create_file_perms;
