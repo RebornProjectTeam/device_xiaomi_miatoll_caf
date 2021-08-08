@@ -70,23 +70,16 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
 
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
     class hal
     user nfc
     group nfc
     disabled
 
-service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
-    override
-    class hal
-    user system
-    group system
-    disabled
-
-on property:ro.boot.product.hardware.sku=joyeuse
-    enable nqnfc_2_0_hal_service
-    enable secureelement-hal_1_2
+on init && property:ro.boot.hwname=joyeuse
+    setprop ro.boot.product.hardware.sku joyeuse
+    start vendor.nfc_hal_service
 
 service thermal-engine /vendor/bin/thermal-engine
     class main
