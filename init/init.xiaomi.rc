@@ -98,13 +98,8 @@ service thermal-engine /vendor/bin/thermal-engine
     socket thermal-send-rule stream 0660 system oem_2907
     disabled
 
-on post-fs && property:ro.product.device=curtana
-    mount none /vendor/etc/thermal-engine-camera-curtana.conf /vendor/etc/thermal-engine-camera.conf bind
-    mount none /vendor/etc/thermal-engine-normal-curtana.conf /vendor/etc/thermal-engine-normal.conf bind
-    enable thermal-engine
-
-on post-fs && property:ro.product.device=joyeuse
-    mount none /vendor/etc/thermal-engine-normal-joyeuse.conf /vendor/etc/thermal-engine-normal.conf bind
+on boot && property:ro.product.vendor.device=*
+    mount none /vendor/etc/thermal-engine-map-${ro.product.vendor.device}.conf /vendor/etc/thermal-engine-map.conf bind
     enable thermal-engine
 
 on post-fs && property:ro.boot.hwname=curtana
