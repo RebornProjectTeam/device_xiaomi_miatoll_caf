@@ -45,7 +45,6 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 vendor.mm.enable.qcom_parser=16777215
 persist.mm.enable.prefetch=true
 
-
 #
 # system props for the data modules
 #
@@ -83,7 +82,6 @@ persist.data.df.dev_name=rmnet_usb0
 persist.debug.wfd.enable=1
 ##property to choose between virtual/external wfd display
 persist.sys.wfd.virtual=0
-
 
 #property to enable HWC for VDS
 debug.sf.enable_hwc_vds=1
@@ -150,3 +148,4 @@ ro.media.recorder-max-base-layer-fps = 60
 
 #Battery Property
 ro.charger.enable_suspend = 1
+
