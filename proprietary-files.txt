@@ -1140,10 +1140,8 @@ vendor/lib64/sensors.ssc.so|ca06ec62cc3cff830c7ca812bc8ed2ad6d86039c
 # SecureMSM - from LA.UM.9.1.r1-10200-SMxxx0.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
